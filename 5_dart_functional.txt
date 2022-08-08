@@ -1,0 +1,8 @@
+//5. Dart Functional Programming
+
+String scream(int length) => "A${'s' * length}ep!";
+
+main() {
+  final values = [1, 1, 2, 3, 5, 10];
+  values.skip(1).take(5).map(scream).forEach(print);
+}
